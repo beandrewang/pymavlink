@@ -13,7 +13,7 @@ except LookupError:
 from setuptools import setup, Extension
 import glob, os, shutil, fnmatch, platform, sys
 
-version = '2.2.2'
+version = '2.2.6'
 
 
 def generate_content():
@@ -125,7 +125,9 @@ setup (name = 'pymavlink',
                                                      'C/include_v1.0/*.hpp',
                                                      'C/include_v2.0/*.h',
                                                      'C/include_v2.0/*.hpp',
-                                                     'CPP11/include_v2.0/*.hpp', ],
+                                                     'CPP11/include_v2.0/*.hpp',
+                                                     'CS/common/*.cs',
+                                                     'swift/*.swift',],
                         'pymavlink' : ['mavnative/*.h'],
                         'pymavlink' : ['message_definitions/v*/*.xml'] },
        packages = ['pymavlink',
